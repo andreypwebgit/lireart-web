@@ -14,23 +14,22 @@
   <meta property="og:image" content="/assets/images/logos/lireart-logo.jpg" />
   <meta name="theme-color" content="#ec6bd9" />
 </head>
-<body class="bg-white text-brand-dark">
+<body>
   <!-- Header -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-brand-purple/10">
-    <div class="container flex items-center justify-between py-3">
-      <a class="flex items-center gap-3" href="/">
-        <img src="/assets/images/logos/lireart-logo.jpg" width="54" height="54" alt="Logotipo LiReArt" class="rounded-full" />
-        <span class="font-display text-xl text-brand-gradient">LiReArt</span>
+  <header class="site-header">
+    <div class="container flex items-center justify-between py-2">
+      <a class="logo" href="/" aria-label="Inicio LiReArt">
+        <img src="/assets/images/logos/lireart-logo.jpg" alt="Logotipo LiReArt" />
       </a>
-      <nav class="hidden md:flex gap-6" aria-label="Principal">
-        <a class="hover:underline" href="/about.html">Sobre mí</a>
-        <a class="hover:underline" href="/gallery.html">Galería</a>
-        <a class="hover:underline" href="/contact.html">Contacto</a>
+      <nav class="hidden md:flex items-center gap-1" aria-label="Principal">
+        <a class="nav-link" href="/about.html">Sobre mí</a>
+        <a class="nav-link" href="/gallery.html">Galería</a>
+        <a class="nav-link" href="/contact.html">Contacto</a>
       </nav>
       <button id="menu-toggle" class="md:hidden btn-ghost" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">Menú</button>
     </div>
-    <div id="mobile-menu" class="md:hidden hidden border-t border-brand-purple/10">
-      <div class="container py-2 flex flex-col gap-2">
+    <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div class="container py-2 flex flex-col gap-1">
         <a class="py-2" href="/about.html">Sobre mí</a>
         <a class="py-2" href="/gallery.html">Galería</a>
         <a class="py-2" href="/contact.html">Contacto</a>
@@ -39,58 +38,64 @@
   </header>
 
   <!-- Hero -->
+  <main>
   <section class="relative">
-    <div class="container grid md:grid-cols-2 gap-8 items-center py-16">
+    <div class="container grid md:grid-cols-2 gap-10 items-center py-12">
       <div>
-        <h1 class="font-display text-4xl sm:text-5xl leading-tight"><span class="text-brand-gradient">Arte & Pasión</span> en cada pieza</h1>
-        <p class="mt-4 text-lg text-black/70">Pendientes y complementos únicos creados a mano con resinas y texturas naturales. Cada pieza cuenta una historia.</p>
+        <h1 class="text-4xl sm:text-6xl leading-tight"><span class="text-brand-gradient">Arte & Pasión</span> en cada pieza</h1>
+        <p class="mt-4 text-lg opacity-80">Pendientes y complementos únicos creados a mano con resinas y texturas naturales. Cada pieza cuenta una historia.</p>
         <div class="mt-8 flex gap-3">
-          <a href="/gallery.html" class="btn-primary">Ver galería</a>
+          <a href="/gallery.html" class="btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            Ver galería
+          </a>
           <a href="/contact.html" class="btn-ghost">Encargar una pieza</a>
         </div>
       </div>
-      <div class="rounded-3xl p-2 bg-gradient-to-br from-brand-pink/20 to-brand-purple/20">
+      <div class="rounded-3xl p-2 bg-gradient-to-br from-[color:var(--brand-pink)]/15 to-[color:var(--brand-purple)]/15">
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <img class="rounded-2xl" src="/assets/images/works/pendientes-01.jpg" alt="Pendientes artesanales LiReArt (dorado y nácar)" loading="lazy" decoding="async" />
-          <img class="rounded-2xl" src="/assets/images/works/pendientes-02.jpg" alt="Pendientes LiReArt con cuentas verdes y hojas doradas" loading="lazy" decoding="async" />
-          <img class="rounded-2xl" src="/assets/images/works/pendientes-03.jpg" alt="Pendientes LiReArt con resina y pan de oro" loading="lazy" decoding="async" />
-          <img class="rounded-2xl" src="/assets/images/works/taller-01.jpg" alt="Mesa de trabajo del taller LiReArt" loading="lazy" decoding="async" />
-          <img class="rounded-2xl" src="/assets/images/about/about-me-01.jpg" alt="Lilian, artesana de LiReArt" loading="lazy" decoding="async" />
-          <img class="rounded-2xl" src="/assets/images/about/about-me-02.jpg" alt="Lilian luciendo un vestido fucsia" loading="lazy" decoding="async" />
+          <img class="media" src="/assets/images/works/pendientes-01.jpg" alt="Pendientes artesanales LiReArt (dorado y nácar)" loading="lazy" decoding="async" />
+          <img class="media" src="/assets/images/works/pendientes-02.jpg" alt="Pendientes LiReArt con cuentas verdes y hojas doradas" loading="lazy" decoding="async" />
+          <img class="media" src="/assets/images/works/pendientes-03.jpg" alt="Pendientes LiReArt con resina y pan de oro" loading="lazy" decoding="async" />
+          <img class="media" src="/assets/images/works/taller-01.jpg" alt="Mesa de trabajo del taller LiReArt" loading="lazy" decoding="async" />
+          <img class="media-tall" src="/assets/images/about/about-me-01.jpg" alt="Lilian, artesana de LiReArt" loading="lazy" decoding="async" />
+          <img class="media-tall" src="/assets/images/about/about-me-02.jpg" alt="Lilian luciendo un vestido fucsia" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Galería destacada -->
-  <section class="py-12">
+  <section class="py-8">
     <div class="container">
       <div class="flex items-end justify-between mb-6">
-        <h2 class="text-2xl font-display">Piezas destacadas</h2>
-        <a class="text-sm underline" href="/gallery.html">Ver todas</a>
+        <h2 class="text-2xl">Piezas destacadas</h2>
+        <a class="underline" href="/gallery.html">Ver todas</a>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-gallery>
-        <figure class="cursor-zoom-in" data-item data-category="pendientes">
-          <img src="/assets/images/works/pendientes-01.jpg" alt="Pendientes dorados con pétalos nácar" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figure class="card cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-01.jpg" alt="Pendientes dorados con pétalos nácar" class="w-full h-full" loading="lazy" decoding="async" />
           <figcaption class="sr-only">Pendientes dorados con pétalos nácar</figcaption>
         </figure>
-        <figure class="cursor-zoom-in" data-item data-category="pendientes">
-          <img src="/assets/images/works/pendientes-02.jpg" alt="Pendientes con cuentas verdes y hojas doradas" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figure class="card cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-02.jpg" alt="Pendientes con cuentas verdes y hojas doradas" class="w-full h-full" loading="lazy" decoding="async" />
           <figcaption class="sr-only">Pendientes con cuentas verdes y hojas doradas</figcaption>
         </figure>
-        <figure class="cursor-zoom-in" data-item data-category="pendientes">
-          <img src="/assets/images/works/pendientes-03.jpg" alt="Pendientes de resina con pan de oro" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figure class="card cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-03.jpg" alt="Pendientes de resina con pan de oro" class="w-full h-full" loading="lazy" decoding="async" />
           <figcaption class="sr-only">Pendientes de resina con pan de oro</figcaption>
         </figure>
-        <figure class="cursor-zoom-in" data-item data-category="otros">
-          <img src="/assets/images/works/taller-01.jpg" alt="El taller de LiReArt" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figure class="card cursor-zoom-in" data-item data-category="otros">
+          <img src="/assets/images/works/taller-01.jpg" alt="El taller de LiReArt" class="w-full h-full" loading="lazy" decoding="async" />
           <figcaption class="sr-only">El taller de LiReArt</figcaption>
         </figure>
       </div>
-    </section>
+    </div>
+  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="border-t border-brand-purple/10 mt-16">
+  <footer class="site-footer">
     <div class="container py-8 text-sm flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <p>© <span id="year"></span> LiReArt — Hecho a mano con amor.</p>
       <nav class="flex gap-4">
