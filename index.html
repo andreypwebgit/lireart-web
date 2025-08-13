@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LiReArt • Art & Passion — Hecho a mano</title>
+  <meta name="description" content="Piezas artesanales únicas: pendientes y complementos creados con amor por LiReArt." />
+  <link rel="preload" href="/assets/css/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta property="og:title" content="LiReArt • Art & Passion" />
+  <meta property="og:description" content="Artesanía hecha a mano con resinas y texturas naturales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/logos/lireart-logo.jpg" />
+  <meta name="theme-color" content="#ec6bd9" />
+</head>
+<body class="bg-white text-brand-dark">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-brand-purple/10">
+    <div class="container flex items-center justify-between py-3">
+      <a class="flex items-center gap-3" href="/">
+        <img src="/assets/images/logos/lireart-logo.jpg" width="54" height="54" alt="Logotipo LiReArt" class="rounded-full" />
+        <span class="font-display text-xl text-brand-gradient">LiReArt</span>
+      </a>
+      <nav class="hidden md:flex gap-6" aria-label="Principal">
+        <a class="hover:underline" href="/about.html">Sobre mí</a>
+        <a class="hover:underline" href="/gallery.html">Galería</a>
+        <a class="hover:underline" href="/contact.html">Contacto</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden btn-ghost" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">Menú</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-brand-purple/10">
+      <div class="container py-2 flex flex-col gap-2">
+        <a class="py-2" href="/about.html">Sobre mí</a>
+        <a class="py-2" href="/gallery.html">Galería</a>
+        <a class="py-2" href="/contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="container grid md:grid-cols-2 gap-8 items-center py-16">
+      <div>
+        <h1 class="font-display text-4xl sm:text-5xl leading-tight"><span class="text-brand-gradient">Arte & Pasión</span> en cada pieza</h1>
+        <p class="mt-4 text-lg text-black/70">Pendientes y complementos únicos creados a mano con resinas y texturas naturales. Cada pieza cuenta una historia.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="/gallery.html" class="btn-primary">Ver galería</a>
+          <a href="/contact.html" class="btn-ghost">Encargar una pieza</a>
+        </div>
+      </div>
+      <div class="rounded-3xl p-2 bg-gradient-to-br from-brand-pink/20 to-brand-purple/20">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <img class="rounded-2xl" src="/assets/images/works/pendientes-01.jpg" alt="Pendientes artesanales LiReArt (dorado y nácar)" loading="lazy" decoding="async" />
+          <img class="rounded-2xl" src="/assets/images/works/pendientes-02.jpg" alt="Pendientes LiReArt con cuentas verdes y hojas doradas" loading="lazy" decoding="async" />
+          <img class="rounded-2xl" src="/assets/images/works/pendientes-03.jpg" alt="Pendientes LiReArt con resina y pan de oro" loading="lazy" decoding="async" />
+          <img class="rounded-2xl" src="/assets/images/works/taller-01.jpg" alt="Mesa de trabajo del taller LiReArt" loading="lazy" decoding="async" />
+          <img class="rounded-2xl" src="/assets/images/about/about-me-01.jpg" alt="Lilian, artesana de LiReArt" loading="lazy" decoding="async" />
+          <img class="rounded-2xl" src="/assets/images/about/about-me-02.jpg" alt="Lilian luciendo un vestido fucsia" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería destacada -->
+  <section class="py-12">
+    <div class="container">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-2xl font-display">Piezas destacadas</h2>
+        <a class="text-sm underline" href="/gallery.html">Ver todas</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-gallery>
+        <figure class="cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-01.jpg" alt="Pendientes dorados con pétalos nácar" loading="lazy" decoding="async" class="rounded-2xl" />
+          <figcaption class="sr-only">Pendientes dorados con pétalos nácar</figcaption>
+        </figure>
+        <figure class="cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-02.jpg" alt="Pendientes con cuentas verdes y hojas doradas" loading="lazy" decoding="async" class="rounded-2xl" />
+          <figcaption class="sr-only">Pendientes con cuentas verdes y hojas doradas</figcaption>
+        </figure>
+        <figure class="cursor-zoom-in" data-item data-category="pendientes">
+          <img src="/assets/images/works/pendientes-03.jpg" alt="Pendientes de resina con pan de oro" loading="lazy" decoding="async" class="rounded-2xl" />
+          <figcaption class="sr-only">Pendientes de resina con pan de oro</figcaption>
+        </figure>
+        <figure class="cursor-zoom-in" data-item data-category="otros">
+          <img src="/assets/images/works/taller-01.jpg" alt="El taller de LiReArt" loading="lazy" decoding="async" class="rounded-2xl" />
+          <figcaption class="sr-only">El taller de LiReArt</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-brand-purple/10 mt-16">
+    <div class="container py-8 text-sm flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p>© <span id="year"></span> LiReArt — Hecho a mano con amor.</p>
+      <nav class="flex gap-4">
+        <a class="underline" href="/privacy.html">Privacidad</a>
+        <a class="underline" href="/cookies.html">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

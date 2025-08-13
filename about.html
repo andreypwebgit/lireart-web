@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mí — LiReArt</title>
+  <meta name="description" content="La historia de LiReArt: artesanía hecha a mano por Lilian, madre y creadora de piezas únicas." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body class="bg-white text-brand-dark">
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-brand-purple/10">
+    <div class="container flex items-center justify-between py-3">
+      <a class="flex items-center gap-3" href="/"><img src="/assets/images/logos/lireart-logo.jpg" width="40" height="40" alt="LiReArt" class="rounded-full" /><span class="font-display text-lg">LiReArt</span></a>
+      <nav class="hidden md:flex gap-6" aria-label="Principal">
+        <a class="hover:underline" href="/gallery.html">Galería</a>
+        <a class="hover:underline" href="/contact.html">Contacto</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden btn-ghost" aria-expanded="false" aria-controls="mobile-menu">Menú</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-brand-purple/10">
+      <div class="container py-2 flex flex-col gap-2">
+        <a class="py-2" href="/gallery.html">Galería</a>
+        <a class="py-2" href="/contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container py-12 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="font-display text-3xl">Hola, soy Lilian 👋</h1>
+        <p class="mt-4 leading-relaxed">Soy mamá de cuatro peques (¡incluidos trillizos!) y artesana de corazón. En LiReArt doy vida a piezas únicas con resinas, flores y texturas naturales. Cada creación nace de momentos cotidianos y mucha paciencia, y está pensada para acompañarte con elegancia y sencillez.</p>
+        <p class="mt-4 leading-relaxed">Me encanta trabajar con las manos, experimentar con el color y cuidar los detalles. La calma del taller, la música suave y el brillo de una pieza bien acabada… ahí está mi <em>Art & Passion</em>.</p>
+      </div>
+      <div class="grid gap-4">
+        <img class="rounded-3xl shadow-soft" src="/assets/images/about/about-me-01.jpg" alt="Lilian, artesana de LiReArt" loading="lazy" decoding="async" />
+        <img class="rounded-3xl shadow-soft" src="/assets/images/about/about-me-03.jpg" alt="Lilian disfrutando al aire libre" loading="lazy" decoding="async" />
+        <img class="rounded-3xl shadow-soft" src="/assets/images/works/taller-01.jpg" alt="Taller de LiReArt" loading="lazy" decoding="async" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-brand-purple/10">
+    <div class="container py-8 text-sm flex items-center justify-between">
+      <p>© <span id="year"></span> LiReArt</p>
+      <nav class="flex gap-4"><a class="underline" href="/privacy.html">Privacidad</a><a class="underline" href="/cookies.html">Cookies</a></nav>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

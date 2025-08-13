@@ -1,0 +1,5 @@
+/* CSS mínimo para un primer render rápido si deseas inline en <head> */
+:root { color-scheme: light only; }
+html { scroll-behavior: smooth; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+img { height: auto; max-width: 100%; }

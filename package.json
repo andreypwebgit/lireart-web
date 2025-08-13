@@ -1,0 +1,14 @@
+{
+  "name": "lireart-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LiReArt – Escaparate online artesanal (HTML5 + Tailwind v4)",
+  "scripts": {
+    "build:css": "npx tailwindcss -c ./tailwind.config.js -i ./_source/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "npx tailwindcss -c ./tailwind.config.js -i ./_source/input.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

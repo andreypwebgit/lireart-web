@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería — LiReArt</title>
+  <meta name="description" content="Explora la galería de pendientes, llaveros y más piezas artesanales LiReArt." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body class="bg-white text-brand-dark">
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-brand-purple/10">
+    <div class="container flex items-center justify-between py-3">
+      <a class="flex items-center gap-3" href="/"><img src="/assets/images/logos/lireart-logo.jpg" width="40" height="40" alt="LiReArt" class="rounded-full" /><span class="font-display text-lg">LiReArt</span></a>
+      <nav class="hidden md:flex gap-6" aria-label="Principal">
+        <a class="hover:underline" href="/about.html">Sobre mí</a>
+        <a class="hover:underline" href="/contact.html">Contacto</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden btn-ghost" aria-expanded="false" aria-controls="mobile-menu">Menú</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-brand-purple/10">
+      <div class="container py-2 flex flex-col gap-2">
+        <a class="py-2" href="/about.html">Sobre mí</a>
+        <a class="py-2" href="/contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-10">
+    <h1 class="font-display text-3xl mb-6">Galería</h1>
+
+    <!-- Filtros -->
+    <div class="flex flex-wrap gap-2 mb-6">
+      <button class="chip bg-brand-purple/10" data-filter="all">Todo</button>
+      <button class="chip" data-filter="pendientes">Pendientes</button>
+      <button class="chip" data-filter="llaveros">Llaveros</button>
+      <button class="chip" data-filter="relojes">Relojes</button>
+      <button class="chip" data-filter="otros">Otros</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-gallery>
+      <!-- Repite figuras y ajusta categoría -->
+      <figure class="cursor-zoom-in" data-item data-category="pendientes">
+        <img src="/assets/images/works/pendientes-01.jpg" alt="Pendientes rosa LiReArt" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figcaption class="sr-only">Pendientes rosa LiReArt</figcaption>
+      </figure>
+      <figure class="cursor-zoom-in" data-item data-category="pendientes">
+        <img src="/assets/images/works/pendientes-02.jpg" alt="Pendientes morados LiReArt" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figcaption class="sr-only">Pendientes morados LiReArt</figcaption>
+      </figure>
+      <figure class="cursor-zoom-in" data-item data-category="llaveros">
+        <img src="/assets/images/works/llavero-01.jpg" alt="Llavero artesanal" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figcaption class="sr-only">Llavero artesanal</figcaption>
+      </figure>
+      <figure class="cursor-zoom-in" data-item data-category="relojes">
+        <img src="/assets/images/works/reloj-01.jpg" alt="Reloj intervenido LiReArt" loading="lazy" decoding="async" class="rounded-2xl" />
+        <figcaption class="sr-only">Reloj intervenido</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="border-t border-brand-purple/10">
+    <div class="container py-8 text-sm flex items-center justify-between">
+      <p>© <span id="year"></span> LiReArt</p>
+      <nav class="flex gap-4"><a class="underline" href="/privacy.html">Privacidad</a><a class="underline" href="/cookies.html">Cookies</a></nav>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
